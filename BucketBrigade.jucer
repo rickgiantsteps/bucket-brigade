@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="ytjm3m" name="BucketBrigade" projectType="audioplug" displaySplashScreen="1"
+              jucerFormatVersion="1" companyName="LIM" pluginFormats="buildStandalone,buildVST3"
+              pluginDesc="A simple emulation of an analogue bucket brigade delay."
+              pluginManufacturerCode="LIM!" pluginVST3Category="Delay,Fx" pluginAUMainType="'aufx'"
+              companyWebsite="https://www.ludovico.net/">
+  <MAINGROUP id="Py0GEp" name="BucketBrigade">
+    <GROUP id="{8C2FB662-ED83-7A50-FBA3-3087D74EE57D}" name="Source">
+      <GROUP id="{0D8D67E1-7940-E52C-F0B1-27403EB7FFB5}" name="GUI">
+        <FILE id="Zb3Gys" name="Meter.h" compile="0" resource="0" file="Source/Meter.h"/>
+        <FILE id="XTJMPf" name="MyTheme.h" compile="0" resource="0" file="Source/MyTheme.h"/>
+        <FILE id="E6HXjx" name="PluginEditor.cpp" compile="1" resource="0"
+              file="Source/PluginEditor.cpp"/>
+        <FILE id="wPmMGy" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+      </GROUP>
+      <GROUP id="{79EFA69D-04FF-EBB9-01C5-688802837180}" name="DSP">
+        <FILE id="YqGoNg" name="BucketBrigade.h" compile="0" resource="0" file="Source/BucketBrigade.h"/>
+        <FILE id="snjCku" name="Delays.h" compile="0" resource="0" file="Source/Delays.h"/>
+        <FILE id="W2l53T" name="DryWet.h" compile="0" resource="0" file="Source/DryWet.h"/>
+        <FILE id="QkYT9o" name="Oscillators.h" compile="0" resource="0" file="Source/Oscillators.h"/>
+      </GROUP>
+      <FILE id="Zsezgp" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
+      <FILE id="NGFCMQ" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="un8qNf" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1" JUCE_VST3_CAN_REPLACE_VST2="0"/>
+  <EXPORTFORMATS>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="BucketBrigade"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="BucketBrigade"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"
+            useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
